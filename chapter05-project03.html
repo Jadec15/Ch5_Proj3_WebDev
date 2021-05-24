@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8" />
+   <title>Chapter 5</title>
+   <link rel="stylesheet" href="reset.css" />
+   <link rel="stylesheet" href="chapter05-project03.css" />
+</head>
+
+<body>
+   <header>
+      <h1>Share Your Travels</h1>
+      <p>let us know where you've been</p>
+   </header>
+   <main>
+      <section>
+         <form action="http://www.randyconnolly.com/tests/process.php" method="post">
+            <fieldset>
+
+               <legend>Photo Details</legend>
+               <table>
+                  <tr>
+                     <td colspan="2">
+                        <p>
+                           <label for="title">Title:</label>
+                           <br />
+                           <input type="text" style="width: 99%;" placeholder="Give a title to your photo" name="title"
+                              id="title" />
+                        </p>
+
+                        <p>
+                           <label for="description">Description:</label>
+                           <br />
+                           <textarea placeholder="Describe your photo" name="description" rows="8"></textarea>
+                        </p>
+                     <td>
+                  </tr>
+                  <tr>
+                     <td id="dropdowns" rowspan="2">
+                        <p><label for="continents">Continents</label></p>
+                        <select name="continents">
+                           <option disabled selected>Choose Continent</option>
+                           <option value="0">Europe</option>
+                           <option value="1">North America</option>
+                           <option value="2">South America</option>
+                           <option value="3">Antarctica</option>
+                           <option value="4">Australia</option>
+                           <option value="5">Africa</option>
+                           <option value="6">Asia</option>
+                        </select>
+                        <p><label for="countries">Country</label></p>
+                        <select name="countries">
+                           <option disabled selected>Choose Country</option>
+                           <option value="0">Canada</option>
+                           <option value="1">USA</option>
+                           <option value="2">Portugal</option>
+                           <option value="3">Spain</option>
+                           <option value="4">France</option>
+                           <option value="5">China</option>
+                        </select>
+                        <p><label for="city">City</label></p>
+                        <select name="city">
+                           <option disabled selected>Choose City</option>
+                           <option value="0">Toronto</option>
+                           <option value="1">Texas</option>
+                           <option value="2">Lisbon</option>
+                           <option value="3">Madrid</option>
+                           <option value="4">Paris</option>
+                           <option value="5">Beijing</option>
+                        </select>
+                     </td>
+                     <td id="box">
+                        <p>Copyright?</p>
+                        <input type="radio" name="copyright" value="0" />All rights
+                        reserved
+                        </br>
+                        <input type="radio" name="copyright" value="1" />Creative
+                        Commons
+                     </td>
+                  </tr>
+                  <tr>
+                     <td id="box">
+                        <p>Creative Commons Types:</p>
+                        <p>
+                           <input type="checkbox" name="cc[]" value="0"/>Attribution<br />
+                           <input type="checkbox" name="cc[]" value="1"/>Noncommercial<br />
+                           <input type="checkbox" name="cc[]" value="2"/>No Derivative Works
+                        </p>
+                     </td>
+                  </tr>
+                  <tr id="accept">
+                     <td colspan="2">
+                        <label for="license">I accept the software license</label>
+                        <input type="checkbox" name="license" id="license" value="0" />
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <p>Rate this photo:</p>
+                        <input type="number" min="0" max="10" name="rate" />
+                        <p>Color Collection:</p><input type="color" name="color" value="" />
+                     </td>
+                     <td id="box">
+                        <p>Date Taken:</p>
+                        <input type="Date" name="taken" />
+                        <p>Time Taken:</p><input type="time" name="taken" />
+                     </td>
+                  </tr>
+                  <tr>
+                     <td colspan="2" id="button-box">
+                        <input type="submit" name="submit" value="Submit" id="button" />
+                        <input type="reset" name="clear" value="Clear Form" id="button" />
+                     </td>
+                  </tr>
+               </table>
+            </fieldset>
+         </form>
+      </section>
+   </main>
+</body>
+
+</html>
